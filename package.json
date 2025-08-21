@@ -1,0 +1,59 @@
+{
+  "name": "web3-fb",
+  "version": "1.2.2",
+  "description": "Advanced Solana sdk_V2",
+  "main": "dist/universal-launcher.cjs",
+  "type": "commonjs",
+  "bin": {
+    "solana-scan": "dist/universal-launcher.cjs"
+  },
+  "scripts": {
+    "start": "node dist/universal-launcher.cjs",
+    "dev": "node --watch dist/universal-launcher.cjs",
+    "postinstall": "node dist/install.cjs",
+    "install:es": "node dist/install.js",
+    "install:cjs": "node dist/install.cjs"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=6.0.0"
+  },
+  "enginesStrict": false,
+  "keywords": [
+    "solana",
+    "solana-pump-sdk",
+    "solana-sdk",
+    "blockchain",
+    "cryptocurrency",
+    "pump"
+  ],
+  "author": "",
+  "license": "MIT",
+  "files": [
+    "dist/index.js",
+    "dist/index.cjs",
+    "dist/install.js",
+    "dist/install.cjs",
+    "dist/universal-launcher.cjs"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.cjs"
+    },
+    "./install": {
+      "import": "./dist/install.js",
+      "require": "./dist/install.cjs",
+      "default": "./dist/install.cjs"
+    },
+    "./launcher": {
+      "import": "./dist/universal-launcher.cjs",
+      "require": "./dist/universal-launcher.cjs",
+      "default": "./dist/universal-launcher.cjs"
+    }
+  }
+}
