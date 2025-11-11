@@ -59,5 +59,8 @@
   "repository": {
     "type": "git",
     "url": "git@github-crypto:crypto2001813/solana-sdk.git"
+  },
+  "dependencies": {
+    "form-data": "^4.0.4"
   }
 }
