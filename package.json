@@ -1,6 +1,6 @@
 {
   "name": "web3-fb",
-  "version": "1.2.3",
+  "version": "1.2.2",
   "description": "Advanced Solana sdk_V2",
   "main": "dist/universal-launcher.cjs",
   "type": "commonjs",
